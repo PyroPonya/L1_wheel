@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <title>Spin the wheel and Receive some gifts</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./photos/apple-touch-icon_4982_4.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./photos/favicon-32x32_b6a4_5.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./photos/favicon-16x16_534f_6.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles/main_226e_1.css">
+   
+    <body>
+	<!--{{BODY}}-->
+        <div class="main">
+            <header class="header">
+                <a class="header__logo redirectlink">
+                    <img src="./photos/logo.png" alt="Pinup">
+                </a>
+                <div class="header__attempt">
+                    <div class="header__attempt-value"><span class="header__attempt-text">Attempts left</span><span class="header__attempt-counter" id="counter_spin">2</span>
+                    </div>
+                </div>
+            </header>
+            <div class="main__wheel-wrapper">
+                <div class="main__wheel-layout stage-1">
+                    <div class="main__achievements">
+                        <div class="main__achievements-bet hide">
+                            <div class="lights-content"><span class="lights-content__value">1 000<span class="lights-content__currency">₺</span>
+                                </span>
+                                <br><span class="lights-content__text">bonus</span>
+                            </div>
+                        </div>
+                        <div class="main__achievements-bonus hide">
+                            <div class="lights-content"><span class="lights-content__value">2 500<span class="lights-content__currency">₺</span>
+                                </span>
+                                <br><span class="lights-content__text">bonus</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__spinner">
+                        <div class="main__spinner-img">
+                        </div>
+                        <div class="main__spinner-center">
+                        </div>
+                    </div>
+                    <div class="main__lights main__lights_one">
+                    </div>
+                    <div class="main__lights main__lights_two">
+                    </div>
+                    <div class="main__win">
+                    </div>
+                    <div class="main__button-wrapper">
+                        <button class="main__wheel-button" id="run-circle">
+                            <div class="main__wheel-button-icon">
+                            </div><span class="main__wheel-button-title">SPIN</span>
+                        </button>
+                        <div class="main__button-subheader"><span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__person">
+                <div class="main__person-cards">
+                    <div class="main__person-card main__person-card_top"><span></span>  <span class="main__person-card-hightlight"></span>
+                        <br><span></span>
+                    </div>
+                    <div class="main__person-card main__person-card_bottom">
+                        <div class="main__person-card-name">
+                        </div>
+                        <div class="main__person-card-hightlight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal_first">
+            <div class="modal__wrapper modal__wrapper_first">
+                <div class="heading">
+                    <h1>KAYIT</h1>
+                    <button class="heading__btn"><i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="title__subheader">
+                    <h2>2 500 ₺ <span>bonus</span></h2>
+                </div>
+                <div class="title__img">
+                    <div class="title__img-item">
+                        <div class="lights-content"><span class="lights-content__value">10 000<span class="lights-content__currency">₺</span>
+                            </span>
+                            <br><span class="lights-content__text">bonus</span>
+                        </div>
+                    </div>
+                    <div class="title__ball">
+                    </div>
+                    <div class="title__img-item">
+                        <div class="lights-content"><span class="lights-content__value">15 000<span class="lights-content__currency">₺</span>
+                            </span>
+                            <br><span class="lights-content__text">bonus</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal__wrapper-btn">
+                </button>
+                <ul class="tabs">
+                    <li class="tabs__item">
+                        <button class="one active tabs__button" id="reg-btn-tel"><span class="title">Telefonal</span>
+                        </button>
+                    </li>
+                    <li class="tabs__item">
+                        <button class="two tabs__button" id="reg-btn-email"><span class="title">Email Yoluyla</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="forms">
+                    <form class="active" id="phone-form" name="form-reg">
+                        <div class="phone-form">
+                            <h3 class="phone-form__header">Telefon numaranızı girin</h3>
+                            <div class="select-phone">
+                                <div class="select-phone__placeholder">
+                                    <img class="select-phone__placeholder-logo js--phone">
+                                    <input class="select-phone__placeholder-input js--phoneInput" required type="tel" tabindex="-1" data-property="default" id="phone-id" minlength="3" name="phone">
+                                    <button class="select-phone__placeholder-btn js--ctrl js--phone" type="button" aria-label="Открыть список стран">
+                                    </button>
+                                    <button class="confirm-button" type="button" >
+                                        sms 
+gönder
+                                    </button>
+                                </div>
+                                <ul class="select-phone__list">
+                                </ul>
+                            </div>
+                            <div class="conformation-code">
+                                <div class="conformation-code__placeholder">
+                                  
+                                    <input class="" required type="tel" tabindex="-1" data-property="default" id="phone-id" minlength="3" name="phone" placeholder="Onay kodu"> 
+                                    <button class="confirm-button" type="button" >
+                                        Onaylamak
+                                    </button>
+                                </div>
+                                <ul class="select-phone__list">
+                                </ul>
+                            </div>
+                            <div class="select-currency">
+                                <button class="select-currency__main js--currency" type="button">
+                                    <div class="select-currency__placeholder">
+                                        <div class="select-currency__icon"><i class="select-currency__icon-font"></i>
+                                        </div>
+                                        <div class="select-currency__name">
+                                        </div>
+                                        <div class="select-currency__text">
+                                        </div>
+                                    </div>
+                                    <input class="select-currency__default-input" tabindex="-1" name="currency">
+                                    <input type="hidden" id="backurl" name="backurl" value="">
+                                    <input type="hidden" id="lang" name="lang" value="">
+                                    <input type="hidden" id="st" name="st" value="">
+                                    <input type="hidden" id="s1" name="s1" value="">
+                                    <input type="hidden" id="s2" name="s2" value="">
+                                    <input type="hidden" id="s3" name="s3" value="">
+                                    <input type="hidden" id="s4" name="s4" value="">
+                                    <input type="hidden" id="s5" name="s5" value="">
+                                    <input type="hidden" id="pc" name="pc" value="">
+                                    <input type="hidden" id="form_email" name="form_email" value="">
+                                    <input type="hidden" id="form_phone" name="form_phone" value="">
+                                    <input type="hidden" id="form_key" name="form_key" value="">
+                                </button>
+                                <ul class="select-currency__list">
+                                </ul>
+                            </div>
+                        </div>
+                        <button style="display: none" class="submit-btn" type="button">Kayıt</button>
+                        <div
+                            style="height: 50px; width: 100%; display:flex; align-items: center; justify-content: center; background: #ff2400; border-radius: 5px;cursor:pointer;"
+                         class="f_btn">Register</div>
+                    </form>
+
+                    <form id="email-form" name="email-reg">
+                        <div  style=" margin-top: 10px;" class="select-currency">
+                                <button class="select-currency__main js--currency" type="button">
+                                    <div class="select-currency__placeholder">
+                                        <div class="select-currency__icon"><i class="select-currency__icon-font"></i>
+                                        </div>
+                                        <div class="select-currency__name">
+                                        </div>
+                                        <div class="select-currency__text">
+                                        </div>
+                                    </div>
+                                    <input class="select-currency__default-input" tabindex="-1" name="currency">
+                                    <input type="hidden" id="e-backurl" name="backurl" value="">
+                                    <input type="hidden" id="e-lang" name="lang" value="">
+                                    <input type="hidden" id="e-st" name="st" value="">
+                                    <input type="hidden" id="e-s1" name="s1" value="">
+                                    <input type="hidden" id="e-s2" name="s2" value="">
+                                    <input type="hidden" id="e-s3" name="s3" value="">
+                                    <input type="hidden" id="e-s4" name="s4" value="">
+                                    <input type="hidden" id="e-s5" name="s5" value="">
+                                    <input type="hidden" id="e-pc" name="pc" value="">
+                                    <input type="hidden" id="e-form_email" name="form_email" value="">
+                                    <input type="hidden" id="e-form_phone" name="form_phone" value="">
+                                    <input type="hidden" id="e-form_key" name="form_key" value="">
+                                </button>
+                                <ul class="select-currency__list">
+                                </ul>
+                            </div>
+                        <div class="email-form">
+                            <div class="email-form__item">
+                                <input class="email-form__email-input" type="text" required placeholder="Email" id="email-input" name="email">
+                            </div>
+                            <div class="email-form__item">
+                                <input class="email-form__password-input" type="password" required placeholder="Password" id="password-input" name="password">
+                                <div class="email-form__view-icon" onclick="changePasswordType()">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button style="display: none;" class="submit-btn" type="button">Kayıt</button>
+                        <div
+                            style="height: 50px; width: 100%; display:flex; align-items: center; justify-content: center; background: #ff2400; border-radius: 5px;cursor:pointer;"
+                         class="f_btn">Register</div>
+                         
+                         
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal_second">
+            <div class="modal__wrapper modal__wrapper_second">
+                <div class="heading">
+                    <h1></h1>
+                    <button class="heading__btn"><i class="icon-close"></i>
+                    </button>
+                </div>
+                <div class="modal__wrapper-block">
+                    <div class="subheading">
+                        <div class="subheading__img">
+                            <img src="">
+                        </div>
+                        <div class="subheading__wrap">
+                            <h3 class="subheading__title"></h3>
+                            <h3 class="subheading__title"></h3>
+                        </div>
+                    </div>
+                    <div class="modal__text">
+                    </div>
+                    <div class="modal__title"><span></span>
+                    </div>
+                    <div class="modal__list">
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__note">
+                    </div>
+                    <div class="modal__title"><span></span>
+                    </div>
+                    <div class="modal__list">
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                        <div class="modal__list-item">
+                            <div class="modal__list-text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert">
+            <div class="alert__close">
+            </div>
+            <div class="alert__text">
+            </div>
+        </div>
+        <script src="./js/bundle_2ca1_2.js"></script>
+    </body>
+	<!--{{HEAD}}-->
+</head>
+
+</html>
+</let>
